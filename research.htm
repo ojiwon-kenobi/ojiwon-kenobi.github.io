@@ -1,82 +1,92 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<link= "" rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/blueimp-gallery.min.css">
 </head>
+
 <body>
-	<div id="left-column">
-		<div id="name">Jiwon Lee</div>
-		<div id="education">
-			University of California, Berkeley <br />
-		</div>
-		<div id="social" class="no-hover">
-			<a href= "https://drive.google.com/open?id=0BxDJsiMn3yB1QjBhOFdoeW1tSVU">Presentation</a><br/>
-			<a href="https://drive.google.com/open?id=0BxDJsiMn3yB1YWxaTTdmTTlHd2M">Research Paper</a><br/>
-			<a href="Gallery/gallery.htm">Gallery</a> <br/>
-			<a href= "https://drive.google.com/open?id=0BxDJsiMn3yB1bG5zRldlYXJZams">Video</a><br/>
-			<a href="index.htm">Home</a><br/>
-		</div>
+	<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
 	</div>
 
-</body> 
+<div id="links">
+    <a href="images/1.jpg" title="Makeymakey 1" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/1_tn.jpg" alt="Makeymakey stage">
+    </a>
+    <a href="images/2.jpg" title="Makeymakey 2" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/2_tn.jpg" alt="Makeymakey stage">
+    </a>
+    <a href="images/3.5.jpg" title="Arduino+ Breadboard" data-gallery="#blueimp-gallery">  
+        <img src="images/thumbnails/3.5_tn.jpg" alt="Arduino stage">
+    </a>
+    <a href="images/3.jpg" title="Arduino+ Breadboard 2" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/3_tn.jpg" alt="Arduino stage">
+    </a>
+    <a href="images/4.5.jpg" title="Arduino+ Breadboard 3" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/4.5_tn.jpg" alt="Arduino stage">
+    </a>
+    <a href="images/5.5.jpg" title="Arduino+ Shield 1" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/5.5_tn.jpg" alt="Shield stage">
+    </a>
+    <a href="images/6.5.jpg" title="Arduino + Shield 2" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/6.5_tn.jpg" alt="Shield stage">
+    </a>
+    <a href="images/7.jpg" title="final product 1" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/7_tn.jpg" alt="Final stage">
+    </a>
+    <a href="images/9.jpg" title="final product 2" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/9_tn.jpg" alt="Final stage">
+    </a>    
+    <a href="images/10.jpg" title="final product 3" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/10_tn.jpg" alt="final stage">
+    </a>
+    <a href="images/11.jpg" title="complete setup" data-gallery= "#blueimp-gallery">
+        <img src="images/thumbnails/11_tn.jpg" alt="Complete">
+    </a>
 
-<style>
-#intro {
-	font-size: 12px;
-}
+</div>
 
-#social {
-	font-size: 12px;
-}
-#social a {
-	color: #000;
-	text-decoration: none;
-}
-#social a:hover {
-	color: #FFCECE;
-}
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
 
-.no-hover a {
-	color: #000;
-	text-decoration: none;
-}
 
-.no-hover a:hover {
-	color: #FFCECE;
-	cursor: pointer;
-}
-body {
-	font-family: 'Noto Serif', serif;
-	background-color: #86CDD2;
-}
-#left-column {
-	position: relative;
-	display: inline-block;
-	font-size: 30px;
-	margin: 10% 0% 0% 20%;	
-	float: left;
-}
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
 
-#name {
-	margin-bottom: 8%;
-}
 
-#education {
-	position: relative;
-	font-size: 12px;
-	margin-bottom: 8%;
-}
+var options = {
+    container: document.getElementById('blueimp-gallery')
+};
 
-#experience {
-	position: relative;
-	font-size: 12px;
-	margin-left: 10%;
-}
+var gallery = $('#blueimp-gallery').data('gallery');
 
-.i {
-	font-style: italic;
-}
-</style>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.blueimp-gallery.min.js"></script>
+</body>
+
+
+
+
 </html>
