@@ -1,0 +1,2 @@
+jpg doesn't work with lightbox, but works as thumbnails for some reason.
+So original image files must be in png form. 
