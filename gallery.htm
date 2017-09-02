@@ -1,2 +1,80 @@
-<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+</head>
+
+<body>
+	<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+	</div>
+
+<div id="links">
+    <a href="images/1.jpg" title="Makeymakey 1">
+        <img src="images/thumbnails/1.jpg" alt="Makeymakey stage">
+    </a>
+    <a href="images/2.jpg" title="Makeymakey 2">
+        <img src="images/thumbnails/2.jpg" alt="Makeymakey stage">
+    </a>
+    <a href="images/3.5.jpg" title="Arduino+ Breadboard">
+        <img src="images/thumbnails/3.5.jpg" alt="Arduino stage">
+    </a>
+    <a href="images/3.jpg" title="Arduino+ Breadboard 2">
+        <img src="images/thumbnails/3.jpg" alt="Arduino stage">
+    </a>
+    <a href="images/4.5.jpg" title="Arduino+ Breadboard 3">
+        <img src="images/thumbnails/4.5.jpg" alt="Arduino stage">
+    </a>
+    <a href="images/5.5.jpg" title="Arduino+ Shield 1">
+        <img src="images/thumbnails/5.5.jpg" alt="Shield stage">
+    </a>
+    <a href="images/6.5.jpg" title="Arduino + Shield 2">
+        <img src="images/thumbnails/6.5.jpg" alt="Shield stage">
+    </a>
+    <a href="images/7.jpg" title="final product 1">
+        <img src="images/thumbnails/7.jpg" alt="Final stage">
+    </a>
+    <a href="images/9.jpg" title="final product 2">
+        <img src="images/thumbnails/9.jpg" alt="Final stage">
+    </a>    
+    <a href="images/10.jpg" title="final product 3">
+        <img src="images/thumbnails/10.jpg" alt="final stage">
+    </a>
+    <a href="images/11.jpg" title="complete setup">
+        <img src="images/thumbnails/11.jpg" alt="Complete">
+    </a>
+
+</div>
+
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+
+
+<script src="js/blueimp-gallery.min.js"></script>
+</body>
 
