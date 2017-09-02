@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="css/blueimp-gallery.min.css">
 </head>
 
 <body>
-	<div id="blueimp-gallery" class="blueimp-gallery">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol>
-	</div>
 
 <div id="links">
-    <a href="images/1.jpg" title="Makeymakey 1">
-        <img src="images/thumbnails/1.jpg" alt="Makeymakey stage">
+    <a href="images/1.jpg" title="Makeymakey 1" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/1_tn.jpg" alt="Makeymakey stage">
     </a>
-    <a href="images/2.jpg" title="Makeymakey 2">
-        <img src="images/thumbnails/2.jpg" alt="Makeymakey stage">
+    <a href="images/2.jpg" title="Makeymakey 2" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/2_tn.jpg" alt="Makeymakey stage">
     </a>
-    <a href="images/3.5.jpg" title="Arduino+ Breadboard">
-        <img src="images/thumbnails/3.5.jpg" alt="Arduino stage">
+    <a href="images/3.jpg" title="Arduino+ Breadboard" data-gallery="#blueimp-gallery">  
+        <img src="images/thumbnails/3_tn.jpg" alt="Arduino stage">
     </a>
-    <a href="images/3.jpg" title="Arduino+ Breadboard 2">
-        <img src="images/thumbnails/3.jpg" alt="Arduino stage">
+    <a href="images/4.jpg" title="Arduino+ Breadboard 2" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/4_tn.jpg" alt="Arduino stage">
     </a>
-    <a href="images/4.5.jpg" title="Arduino+ Breadboard 3">
-        <img src="images/thumbnails/4.5.jpg" alt="Arduino stage">
+    <a href="images/5.jpg" title="Arduino+ Breadboard 3" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/5_tn.jpg" alt="Arduino stage">
     </a>
-    <a href="images/5.5.jpg" title="Arduino+ Shield 1">
-        <img src="images/thumbnails/5.5.jpg" alt="Shield stage">
+    <a href="images/6.jpg" title="Arduino+ Shield 1" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/6_tn.jpg" alt="Shield stage">
     </a>
-    <a href="images/6.5.jpg" title="Arduino + Shield 2">
-        <img src="images/thumbnails/6.5.jpg" alt="Shield stage">
+    <a href="images/7.jpg" title="Arduino+ Shield 2" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/7_tn.jpg" alt="Shield stage">
     </a>
-    <a href="images/7.jpg" title="final product 1">
-        <img src="images/thumbnails/7.jpg" alt="Final stage">
+    <a href="images/8.jpg" title="final product 1" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/8_tn.jpg" alt="Final stage">
     </a>
-    <a href="images/9.jpg" title="final product 2">
-        <img src="images/thumbnails/9.jpg" alt="Final stage">
+    <a href="images/9.jpg" title="final product 2" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/9_tn.jpg" alt="Final stage">
     </a>    
-    <a href="images/10.jpg" title="final product 3">
-        <img src="images/thumbnails/10.jpg" alt="final stage">
+    <a href="images/10.jpg" title="final product 3" data-gallery="#blueimp-gallery">
+        <img src="images/thumbnails/10_tn.jpg" alt="final stage">
     </a>
-    <a href="images/11.jpg" title="complete setup">
-        <img src="images/thumbnails/11.jpg" alt="Complete">
+    <a href="images/11.png" title="complete setup" data-gallery= "#blueimp-gallery">
+        <img src="images/thumbnails/11_tn.jpg" alt="Complete">
     </a>
 
 </div>
@@ -63,6 +54,7 @@ document.getElementById('links').onclick = function (event) {
 };
 </script>
 
+
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
     <div class="slides"></div>
     <h3 class="title"></h3>
@@ -73,8 +65,35 @@ document.getElementById('links').onclick = function (event) {
     <ol class="indicator"></ol>
 </div>
 
+ <!--
+var gallery = blueimp.Gallery(links, options);
+
+var pos = gallery.getIndex();
+
+var count = gallery.getNumber();
+
+gallery.prev();
+
+gallery.next();
+
+gallery.slide(index, duration);
+
+gallery.play(interval);
+
+gallery.pause();
+
+gallery.add(list);
+
+gallery.close();-->
 
 
 <script src="js/blueimp-gallery.min.js"></script>
+
+
+
 </body>
 
+
+
+
+</html>
