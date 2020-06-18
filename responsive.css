@@ -61,6 +61,14 @@ body {
   padding: 0;
 }
 
+#name {
+  font-size: 30px;
+}
+
+#cursor{
+  font-size: 50px;
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .nav, .main {   
