@@ -1,0 +1,19 @@
+
+
+6/13/2020
+/// <summary>
+//TODO: 
+// 1. Responsive web-design based on user's timezone
+// 2. Fred (js practice)
+// 3. Typewriter style for blog titles (https://css-tricks.com/snippets/css/typewriter-effect/)
+// 4. 
+/// </summary>
+
+
+
+
+
+
+10/6/2018
+jpg doesn't work with lightbox, but works as thumbnails for some reason.
+So original image files must be in png form. 
