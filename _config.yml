@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: idk yet
-email: aspack314@gmail.com
+title: badabing badaboom
+email: jwlilyun@gmail.com
 description: tbd
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
