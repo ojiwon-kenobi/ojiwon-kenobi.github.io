@@ -1,0 +1,90 @@
+
+body {
+  font-family: Roboto;
+  padding: 10px;
+  background: black;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  font-family: 'VT323';
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: black;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.nav {   
+  font-family: 'VT323';
+  color: white;
+  float: left;
+  width: 25%;
+}
+
+a.nav-link:link {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/* Right column */
+.main {
+  font-family: 'Roboto';
+  color: white;
+  float: right;
+  width: 75%;
+  background-color: black;
+  background: url('fred.png');
+
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.fred {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  width: 75%;
+  height: 30%;
+  text-align: center;
+  background: black;
+  margin-top: 20px;
+  padding: 0;
+}
+
+#name {
+  font-size: 30px;
+}
+
+#cursor{
+  font-size: 50px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .nav, .main {   
+    width: 100%;
+  }
+}
