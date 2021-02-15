@@ -3,17 +3,17 @@
 	"file": "main.css",
 	"sources": [
 		"main.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/_sass/styles.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/clean-blog.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/_variables.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/_mixins.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/_global.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/_navbar.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/_masthead.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/_post.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/_contact.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/_footer.scss",
-		"../../../../usr/local/lib/ruby/gems/2.6.0/gems/jekyll-theme-clean-blog-4.0.10/assets/vendor/startbootstrap-clean-blog/scss/_bootstrap-overrides.scss"
+		"_sass/styles.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/clean-blog.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/_variables.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/_mixins.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/_global.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/_navbar.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/_masthead.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/_post.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/_contact.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/_footer.scss",
+		"assets/vendor/startbootstrap-clean-blog/scss/_bootstrap-overrides.scss"
 	],
 	"sourcesContent": [
 		"@import \"styles\";\n",
