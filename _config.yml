@@ -27,6 +27,7 @@ twitter_username:
 github_username: 
 encoding: utf-8
 # Build settings
+theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
 remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll 
