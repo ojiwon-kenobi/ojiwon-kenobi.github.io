@@ -21,7 +21,7 @@
 title: badabing badaboom
 email: jwlilyun@gmail.com
 description: tbd
-baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: 
