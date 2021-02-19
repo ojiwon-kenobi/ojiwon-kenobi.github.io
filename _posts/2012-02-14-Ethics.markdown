@@ -8,17 +8,25 @@ published: false
 ---
 
 I took an ethics class as a high schooler (yes, my high school had an ethics class), and I remember liking the class a lot. We had to do this debate (I don't remember the topic) in the class using the concepts we learned. Whoever won could nominate a non-profit organization for which the instructor would make a donation. I didn't win, but the high-schooler-me had gotten overly excited and a bit aggressive, enough that the instructor had to quietly call me out on it. Another thing I remember vividly, is discussing the trolley problem. 
-I don't really remember anything else. I guess the biggest takeaway for me at the time, was that there exists a study for 'right' and 'wrong'. Wikipedia provides a better 
+I don't really remember anything else. I guess the biggest takeaway for me at the time, was that there exists a study for 'right' and 'wrong'. Dictionary.com provides a better definition for ethics: "That branch of philosophy dealing with values relating to human conduct, with respect to the rightness and wrongness of certain actions and to the goodness and badness of the motives and ends of such actions." 
 
-Then I fell down the philosophy-ethics-rabbit-hole a couple of weeks ago (aka January 2021). Like most, I don't like being wrong, and hate situations when I can't logically explain my choices. So far, all the decisions I have made have been relatively easy ones- Between x, y, and z, which is better? 
+I fell down the philosophy-ethics-rabbit-hole a couple of weeks ago (aka January 2021). Like most, I don't like being wrong, and hate situations when I can't logically explain my choices. So far, all the decisions I have made have been relatively easy ones- Between x, y, and z, which is better? 
 Then, a friend introduced me to the field of BCIs (brain-computer interfaces), and the idea of being able to control things with your mind, even control your mind itself, got me pondering the harder decisions- Between x, y, and z, what is right? 
 
-About a decade has passed since that ethics class, and I know a few more philosopical view out there, but not much more. I did order a book on bioethics, but since I don't have Amazon Prime, that's going to take a couple of weeks to get to my place.
-
-So I consulted the trusty wikipedia, and here is what I found, and what I got out of it. Philosophy is incredibly complicated, so what I have here is like... an ELI5 of the views I found. 
+### Theories of Morality
+* Moral Subjectivism: <em>You</em> decide what is right or wrong.
+* Cultural Relativism: It depends on what the norm is at the time.
+* Ethical Egoism: If it serves your self-interest, it is right. If it's not, then it is immoral.
+* Divine Command Theory: Listen to God. (...the src does say this theory has serious flaws)
+* Virtue Ethics: Whatever makes a good person is right.
+* Feminist Ethics/ Masculine Ethics: Gender plays a role in discerning right from wrong.
+* Utilitarianism: Overall utility determined by the consequences of an action discerns right from wrong.
+* Kantian Theory: Right and wrong is determined by the consequences.  (Also known as neo-consequentialist moral theory)
+* Rights-based theories: If people have rights, then everybody must do their duty to uphold those rights.
+* Contractarianism: Through social contract, right and wrong is decided. (Social contract = An implicit agreement between the individuals and the state/nation where the individual cooperates with society for social benefits)
 
 ### Philosophical idea 
-* Absurdism: People want a purpose in life, but nobody actually has the ability to find that purpose. (Camus is a partypooper)
+* Absurdism: People want a purpose in life, but nobody actually has the ability to find that purpose.
 * Acosmism: Reality is an illusion.
 * Agnosticism: We'll never know if the divine/ higher power/ God exists.
 * Anarchism: Authority and hierarchy suck.
@@ -44,20 +52,6 @@ So I consulted the trusty wikipedia, and here is what I found, and what I got ou
 * Structralism:  You need to know different elements of human culture 
 * Radical skepticism: 
 * Solipsism: I am real.
-* Trivialism: Everything is true.
+* Trivialism: Everything is true in its own right.
 
-### Theories of Morality
-* Moral Subjectivism: <em>You</em> decide what is right or wrong.
-* Cultural Relativism: It depends on what the norm is at the time.
-* Ethical Egoism: If it's for you, it is right. If it's not, then it is immoral.
-* Divine Command Theory: Listen to God. (...the src does say this theory has serious flaws)
-* Virtue Ethics: Whatever makes a good person is right.
-* Feminist Ethics/ Masculine Ethics: Gender plays a role in discerning right from wrong.
-* Utilitarianism: Overall utility deterined by the consequences of an action discerns right from wrong.
-* Kantian Theory: Right and wrong is determined by the consequences.  (Also known as neo-consequentialist moral theory)
-* Rights-based theories: If people have rights, then everybody must do their duty to uphold those rights.
-* Contractarianism: Through social contract, right and wrong is decided. (Social contract = An implicit agreement between the individuals and the state/nation where the individual cooperates with society for social benefits)
-
-
-I guess we could use philosophical ideas a framework through which we project ideas by supporting them with theories of morality. 
-
+There's not actually any purpose 
