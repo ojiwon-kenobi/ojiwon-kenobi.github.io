@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animation frame-by-frame Interpolation using Autoencoders and CNN
-subtitle: aka tweening because I don't have the mental fortitude to draw 12 fps
+subtitle: aka tweening because I don't have the patience to draw 12 fps
 date: 2021-02-23 18:07 -0600
 published: false
 ---
