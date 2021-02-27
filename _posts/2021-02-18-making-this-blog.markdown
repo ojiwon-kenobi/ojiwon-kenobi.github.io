@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This blog
+title: How to make a blog like this one
 subtitle: From creation to deployment
 date: 2021-02-18 07:01 -0600
 background: 'https:////images.unsplash.com/photo-1493217465235-252dd9c0d632?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'

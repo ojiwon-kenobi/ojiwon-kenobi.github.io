@@ -72,8 +72,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.2.0)
   jekyll-compose
-  jekyll-feed (~> 0.12)
-  jekyll-paginate (~> 1.1.0)
+  jekyll-feed
+  jekyll-paginate
   jekyll-sitemap
   jekyll-theme-clean-blog
   tzinfo (~> 1.2)

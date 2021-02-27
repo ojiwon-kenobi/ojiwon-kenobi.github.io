@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://localhost:4445/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4445/" rel="alternate" type="text/html" /><updated>2021-02-18T22:12:32-06:00</updated><id>http://localhost:4445/feed.xml</id><title type="html">badabing badaboom</title><subtitle>tbd</subtitle><entry><title type="html">Hello World.</title><link href="http://localhost:4445/2021/02/12/Hello-World.html" rel="alternate" type="text/html" title="Hello World." /><published>2021-02-12T21:07:21-06:00</published><updated>2021-02-12T21:07:21-06:00</updated><id>http://localhost:4445/2021/02/12/Hello-World</id><content type="html" xml:base="http://localhost:4445/2021/02/12/Hello-World.html">&lt;h1 id=&quot;one-hastag&quot;&gt;One hastag&lt;/h1&gt;
-&lt;h2 id=&quot;two-hashtags&quot;&gt;Two hashtags&lt;/h2&gt;
-&lt;h3 id=&quot;three-hashtags&quot;&gt;Three hashtags&lt;/h3&gt;
-&lt;h4 id=&quot;four-hashtags&quot;&gt;Four hashtags&lt;/h4&gt;
-&lt;h5 id=&quot;five-hashtags&quot;&gt;Five hashtags&lt;/h5&gt;
-&lt;h6 id=&quot;six-hashtags&quot;&gt;Six hashtags&lt;/h6&gt;
-
-&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog &lt;em&gt;post&lt;/em&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://ojiwon-kenobi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ojiwon-kenobi.github.io/" rel="alternate" type="text/html" /><updated>2021-02-26T22:06:31-06:00</updated><id>https://ojiwon-kenobi.github.io/feed.xml</id><title type="html">badabing badaboom</title><entry><title type="html">Hello World.</title><link href="https://ojiwon-kenobi.github.io/2021/02/12/Hello-World.html" rel="alternate" type="text/html" title="Hello World." /><published>2021-02-12T21:07:21-06:00</published><updated>2021-02-12T21:07:21-06:00</updated><id>https://ojiwon-kenobi.github.io/2021/02/12/Hello-World</id><content type="html" xml:base="https://ojiwon-kenobi.github.io/2021/02/12/Hello-World.html">&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog &lt;em&gt;post&lt;/em&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello, #{name}&quot;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;end&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hello, World' to STDOUT.
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">One hastag Two hashtags Three hashtags Four hashtags Five hashtags Six hashtags</summary></entry></feed>
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# create a post&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;title&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# deploy locally&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;port&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;sc&quot;&gt;??&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Hello world, this is my first Jekyll blog post.</summary></entry></feed>

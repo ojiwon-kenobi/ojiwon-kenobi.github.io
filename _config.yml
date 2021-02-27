@@ -1,11 +1,14 @@
 title: badabing badaboom
 email: jwlilyun@gmail.com
-description: tbd
-#baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ojiwon-kenobi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: 
 encoding: utf-8
 # Build settings
 plugins:
   - jekyll-feed
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
