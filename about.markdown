@@ -10,3 +10,5 @@ Hi 🙋‍♀️; my name is Jiwon. I'm a software engineer passionate about wri
 My one goal in life is to never be bored.
 
 Here's my [old website](../obsolete/index.htm), in case you're visiting before I've had a chance to update this one. 
+
+Unless otherwise stated, all images are from [Unsplash](https://unsplash.com/) and the theme of this blog is [StartBootstrap/startbootstrap-clean-blog-jekyll](https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll) slightly modified. 
