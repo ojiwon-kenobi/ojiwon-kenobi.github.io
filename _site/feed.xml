@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://ojiwon-kenobi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ojiwon-kenobi.github.io/" rel="alternate" type="text/html" /><updated>2021-03-04T21:40:41-06:00</updated><id>https://ojiwon-kenobi.github.io/feed.xml</id><title type="html">badabing badaboom</title><subtitle> </subtitle><entry><title type="html">Hello World.</title><link href="https://ojiwon-kenobi.github.io/2021/02/12/Hello-World.html" rel="alternate" type="text/html" title="Hello World." /><published>2021-02-12T21:07:21-06:00</published><updated>2021-02-12T21:07:21-06:00</updated><id>https://ojiwon-kenobi.github.io/2021/02/12/Hello-World</id><content type="html" xml:base="https://ojiwon-kenobi.github.io/2021/02/12/Hello-World.html">&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog &lt;em&gt;post&lt;/em&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://ojiwon-kenobi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ojiwon-kenobi.github.io/" rel="alternate" type="text/html" /><updated>2021-03-06T13:00:12-06:00</updated><id>https://ojiwon-kenobi.github.io/feed.xml</id><title type="html">badabing badaboom</title><subtitle> </subtitle><entry><title type="html">How to make a blog</title><link href="https://ojiwon-kenobi.github.io/2021/02/18/making-this-blog.html" rel="alternate" type="text/html" title="How to make a blog" /><published>2021-02-18T07:01:00-06:00</published><updated>2021-02-18T07:01:00-06:00</updated><id>https://ojiwon-kenobi.github.io/2021/02/18/making-this-blog</id><content type="html" xml:base="https://ojiwon-kenobi.github.io/2021/02/18/making-this-blog.html">&lt;p&gt;Blogs! They’re a great way to showcase thoughts and ideas. I created this blog to create blogposts about my side-projects and hobbies.
+I started by leafing through random github repos of software engineers and UX designers, until I found a theme that I liked. &lt;a href=&quot;https://www.google.com/search?client=firefox-b-1-d&amp;amp;q=StartBootstrap%2Fstartbootstrap-clean-blog-jekyll+&quot;&gt;StartBootstrap/startbootstrap-clean-blog-jekyll&lt;/a&gt; had everything I wanted- minimalist design, a backdrop image, and placement of posts on the front page. 
+And then setup was pretty straightforward.&lt;/p&gt;
+
+&lt;h4 id=&quot;i-install-ruby-and-jekyll&quot;&gt;I. Install Ruby and Jekyll&lt;/h4&gt;
+&lt;p&gt;Ruby is a programming language, and jekyll is your trusty site generator that depends on Ruby to run.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install Ruby by following one of the suggestions in the &lt;a href=&quot;https://www.ruby-lang.org/en/documentation/installation/&quot;&gt;Ruby Installation Guidelines&lt;/a&gt;. Check if it was installed by running&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ruby -v&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;in your terminal/powershell/cmdline/etc.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Installing ruby should also install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem&lt;/code&gt;, which is both the term for libraries/pkgs used in Ruby, and is also the command you can use to manipulate RubyGems, which basically is another cmdline tool to manipulate gems. Check that gem was installed by running&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem -v&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Jekyll is a gem that will be the foundation for your blog. Install jekyll by running&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install jekyll bundler&lt;/code&gt;&lt;/p&gt;
+
+    &lt;details&gt;
+ &lt;summary&gt;Common problem&lt;/summary&gt;
+    If you run into errors, prepare to spend some time fixing the dependencies between ruby, gem, and jekyll. For me, compilation was failing because there were two versions of ruby installed on my machine. The wrong one was being referenced each time I tried to compile. I changed the path of the ruby being called so that it led to the more recent version, and then deleted the old version of ruby, which fixed the problem.
+ &lt;/details&gt;
+
+    &lt;p&gt;Make sure you installed it by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll -v&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;ii-create-a-blog-with-jekyll-and-deploy-it-locally&quot;&gt;II. Create a blog with Jekyll and deploy it locally.&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can create your own Jekyll blog by running&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new &amp;lt;blogName&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;This blog will use the default Jekyll theme called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minima&lt;/code&gt; but you can change the theme by replacing the theme in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; file. More to come on that.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Run&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;in your shell/cli/terminal/powershell, and go to the server address the build states (it’ll probably be http://127.0.0.1:4000/)    and voila, you have your blog.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;iii-personalize-your-blog&quot;&gt;III. Personalize your blog&lt;/h4&gt;
+&lt;p&gt;If you choose to build your own blog with custom interactions and design, this section won’t help you very much.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;If you decide to use a theme, go to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; which should’ve been automatically created when you first ran &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new &amp;lt;blogname&amp;gt;&lt;/code&gt;. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; maintains all the gems you need for your site to load properly. Not only will it include &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll&lt;/code&gt; since your site needs Jekyll to run, but it will also include the default theme, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minima&lt;/code&gt;. Replace it with the gem of a theme of your choice, and the website will render in that theme automatically.&lt;/li&gt;
+  &lt;li&gt;However, further personalization requires another step. It’s likely that if you are using a theme from a gem, you won’t be able to personalize it very much. Think of a gem, or any library or package as a building made out of legos. You can’t just yank out a lego- it’s built in. So in order to have more control and freedom over your blog, you’re going to have to take the source code which open-source themes will offer, and refactor it. &lt;br /&gt;
+For myself, I didn’t want the ‘contact’ tab. It was broken when I first deployed my blog locally, and for it to work, I needed to sign up to an email service. Having a broken feature on the UI seemed like a big flaw on my blog, so I decided to take it out. (I also wanted to change the font and some of the layout templates). &lt;br /&gt;
+So find out what files do what. What I did, was I found out that there were files that were specifically there to make the theme a gem, and files that actually made up the blog and its features. I just needed to keep the latter.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;iv-deploy-to-github&quot;&gt;IV. Deploy to github&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Push your branch to github in a repo that is specifically named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;your-github-username&amp;gt;.github.io&lt;/code&gt;. This is how Github will understand this is going to be your personal website and will render it as so.&lt;/li&gt;
+  &lt;li&gt;Wait a bit- grab some coffee or water, and then head over to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https:&amp;lt;your-github-username&amp;gt;.github.io&lt;/code&gt;. You’ll be able to see your neat new blog. (You also might get a nice email from github saying if it was a success or a failure.)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;v-writing-posts&quot;&gt;V. Writing posts&lt;/h4&gt;
+&lt;p&gt;When you first create your site by running &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new &amp;lt;blogname&amp;gt;&lt;/code&gt;, you’ll find that there will be a number of folders created with underscores in front of their names, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_includes&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_layouts&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt;. This folder structure is what jekyll needs to build your site.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Create a test post to make sure things work. In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; folder, create a markdown file with the title formatted in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-title.markdown&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Jekyll takes markdown content and passes it through templates indicated in the YAML front-matter block at the top of each page. This specific page also has a front-matter block:
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+layout: post
+title: How to make a blog
+subtitle: From creation to deployment
+date: 2021-02-18 07:01 -0600
+background: 'https:////images.unsplash.com/photo-1493217465235-252dd9c0d632?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;amp;ixlib=rb-1.2.1&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=1350&amp;amp;q=80'
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;The first line indicates to Jekyll that this page should be rendered as a post defined in the layouts, which is the folder houses all the templates. Add the front-matter block to the top of your file with the details about layout and title at the very minimum.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;. You should see your post hosted as a static page in your blog.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And that’s it 👏&lt;/p&gt;</content><author><name></name></author><summary type="html">Blogs! They’re a great way to showcase thoughts and ideas. I created this blog to create blogposts about my side-projects and hobbies. I started by leafing through random github repos of software engineers and UX designers, until I found a theme that I liked. StartBootstrap/startbootstrap-clean-blog-jekyll had everything I wanted- minimalist design, a backdrop image, and placement of posts on the front page. And then setup was pretty straightforward.</summary></entry><entry><title type="html">Hello World.</title><link href="https://ojiwon-kenobi.github.io/2021/02/12/Hello-World.html" rel="alternate" type="text/html" title="Hello World." /><published>2021-02-12T21:07:21-06:00</published><updated>2021-02-12T21:07:21-06:00</updated><id>https://ojiwon-kenobi.github.io/2021/02/12/Hello-World</id><content type="html" xml:base="https://ojiwon-kenobi.github.io/2021/02/12/Hello-World.html">&lt;p&gt;&lt;strong&gt;Hello world&lt;/strong&gt;, this is my first Jekyll blog &lt;em&gt;post&lt;/em&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;n&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello, #{name}&quot;&lt;/span&gt;

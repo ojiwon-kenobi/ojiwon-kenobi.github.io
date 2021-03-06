@@ -4,7 +4,6 @@ title: How to make a blog
 subtitle: From creation to deployment
 date: 2021-02-18 07:01 -0600
 background: 'https:////images.unsplash.com/photo-1493217465235-252dd9c0d632?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-published: false
 ---
 Blogs! They're a great way to showcase thoughts and ideas. I created this blog to create blogposts about my side-projects and hobbies.
 I started by leafing through random github repos of software engineers and UX designers, until I found a theme that I liked. [StartBootstrap/startbootstrap-clean-blog-jekyll](https://www.google.com/search?client=firefox-b-1-d&q=StartBootstrap%2Fstartbootstrap-clean-blog-jekyll+) had everything I wanted- minimalist design, a backdrop image, and placement of posts on the front page. 
