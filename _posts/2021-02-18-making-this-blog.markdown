@@ -46,8 +46,13 @@ Ruby is a programming language, and jekyll is your trusty site generator that de
 If you choose to build your own blog with custom interactions and design, this section won't help you very much. 
 1. If you decide to use a theme, go to your `Gemfile` which should've been automatically created when you first ran `jekyll new <blogname>`. The `Gemfile` maintains all the gems you need for your site to load properly. Not only will it include `jekyll` since your site needs Jekyll to run, but it will also include the default theme, `minima`. Replace it with the gem of a theme of your choice, and the website will render in that theme automatically. 
 2. However, further personalization requires another step. It's likely that if you are using a theme from a gem, you won't be able to personalize it very much. Think of a gem, or any library or package as a building made out of legos. You can't just yank out a lego- it's built in. So in order to have more control and freedom over your blog, you're going to have to take the source code which open-source themes will offer, and refactor it. <br/>
-For myself, I didn't want the 'contact' tab. It was broken when I first deployed my blog locally, and for it to work, I needed to sign up to an email service. Having a broken feature on the UI seemed like a big flaw on my blog, so I decided to take it out. (I also wanted to change the font and some of the layout templates). <br/>
-So find out what files do what. What I did, was I found out that there were files that were specifically there to make the theme a gem, and files that actually made up the blog and its features. I just needed to keep the latter. 
+    <details>
+        <summary>Customization in this blog</summary>
+        For myself, I didn't want the 'contact' tab. It was broken when I first deployed my blog locally, and for it to work, I needed to sign up to an email service. Having a broken feature on the UI seemed like a big flaw on my blog, so I decided to take it out. (I also wanted to change the font and some of the layout templates). <br/>
+        So find out what files do what. What I did, was I found out that there were files that were specifically there to make the theme a gem, and files that actually made up the blog and its features. I just needed to keep the latter. 
+        Another customization that a lot of people (myself included) like to do is on the css files. It's there you can control most of the visual aspects of your blog, such as font size and type, margin, kerning, etc. Most themes employ bootstrap which has its own css file that the build generates and uses. If you want to override this, [do not modify the bootstrap.css file, and instead, create your own css file and place it beneath the reference to the bootstrap.css file](https://stackoverflow.com/questions/8596794/customizing-bootstrap-css-template)
+    </details>
+
 
 #### IV. Deploy to github
 1. Push your branch to github in a repo that is specifically named `<your-github-username>.github.io`. This is how Github will understand this is going to be your personal website and will render it as so. 
