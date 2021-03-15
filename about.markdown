@@ -7,7 +7,7 @@ background: 'https:////images.unsplash.com/photo-1569679979507-807b2d19084b?ixid
 ---
 
 I'm a software engineer passionate about writing good code. I'm also interested in animating and video editing.
-My one goal in life is to never be bored.
+My goal in life is to maximize the number of days I wake up excited to get out of bed. 
 
 Here's my [old website](../obsolete/index.htm), in case you're visiting before I've had a chance to update this one. 
 
