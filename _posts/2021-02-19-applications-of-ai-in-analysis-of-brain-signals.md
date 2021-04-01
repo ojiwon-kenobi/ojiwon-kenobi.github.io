@@ -4,10 +4,11 @@ title: Applications of AI in the analysis of brain signals
 subtitle: "How the field of AI has and will continue advancing our understanding of neural signals" 
 date: 2021-02-19 07:51 -0600
 background: 'https:////images.unsplash.com/photo-1443933223857-9ca346228f72?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1192&q=80'
-published: false
 ---
 
-This post is a general summary of [A survey on deep learning-based non-invasive brain signals: recent advances and new frontiers ](https://pubmed.ncbi.nlm.nih.gov/33171452/), written in November 2020 by Zhang et al. It's a 42-page paper with thorough detail and insight about how AI is playing a role in the emerging field of non-invasive brain-signal analysis. The intended audience for this paper may be researchers with backgrounds in biology and/or neuroscience who want to apply deep learning in their research, and researchers with backgrounds in computer science interested in brain signal research. 
+This post is a general summary of [A survey on deep learning-based non-invasive brain signals: recent advances and new frontiers ](https://pubmed.ncbi.nlm.nih.gov/33171452/), written in November 2020 by Zhang et al. It's a 42-page paper with thorough detail and insight about how AI is playing a role in the emerging field of non-invasive brain-signal analysis using deep learning techniques.
+
+The intended audience for this paper may be researchers with backgrounds in biology and/or neuroscience who want to apply deep learning in their research, and researchers with backgrounds in computer science interested in brain signal research. 
 
 ### I. Introduction
 __Invasive signals__ refer to signals collected through electrodes beneath the scalp, and __non-invasive__, signals collected through electrodes upon the scalp. This paper focuses on non-invasive brain signals.
@@ -43,7 +44,7 @@ Below are publications' subject brain signals and deep learning models.
     * Discriminative: CNN
     * Representative: DBN-RBM
     * Hybrid: CNN & MLP, CNN & LSTM
-* Motor Imagery EEG: mental imagery of making a movement ![https://www.biorxiv.org/content/biorxiv/early/2017/10/10/198432/F2.large.jpg](https://i.ibb.co/KX5h5Rt/Screenshot-2021-02-21-F2-large-jpg-JPEG-Image-1280-1094-pixels.png)
+* Motor Imagery EEG: mental imagery of making a movement 
     * Discriminative: CNN, 2-D CNN, LSTM, MLP
     * Representative: D-AE, DBN-AE, DBN-RBM
     * Generative: VAE
@@ -82,9 +83,9 @@ Below are publications' subject brain signals and deep learning models.
 ### IV. Guidelines on choosing appropriate DL models
 Classification of sleep EEG mainly utilizes discriminative and hybrid models including CNNs and RNNs. MI EEG is most significantly researched using CNN and CNN-based hybrid models. Latent features of MI EEG signals are captured using representative models such as DBN-RBM. Emotional EEG mostly use DBN-RBM for unsupervised feature learning. Mental disease diagnosis is largely a binary classification problem, which makes it easier for models to achieve accuracy greater than 90%. CNN and D-AE are prevalent likely because both deep learning models are well known for their effective classification and dimensionality reduction. In comparison, there are fewer deep learning studies on fNIRS images even though fNIRS also is known for its high portability and low cost.
 ###### Discriminative
-The reason CNN is so prevalent is likely because of its outstanding performance in feature learning. CNN is powerful enough to extract latent discriminative features and spatial dependencies from EEG signals for classification. It is also an extremely popular model in popular research areas such as computer vision, which studies how computers can gain insight from images or videos. Because some brain signal diagrams (e.g. fMRI) are 2D images, they can be used as input to CNNs without much work. CNNs also have plenty of variations that can be adapted to different scenarios.  
+The reason CNN is so prevalent is likely because of its outstanding performance in feature learning. CNN is powerful enough to extract latent discriminative features and spatial dependencies from EEG signals for classification. It is also an extremely popular model in popular research areas such as computer vision, which studies how computers can gain insight from images or videos. Because some brain signal diagrams (e.g. fMRI) are 2D images anyways, they can be used as input to CNNs without much work. CNNs also have plenty of variations that can be adapted to different scenarios.  
 
-But aren't brain signals technically sequential, temporal information? What about RNNs, which are great for processing that kind of information? RNNs take a long time processing long sequences (basically brain signals), and although depending on the situation, RNNs may take up more than 20 times the training time than CNN may. However, RNNs are promising in detecting epileptic seizures due to their excellent temporal dependency searching ability. By definition, spatial data is better analyzed by CNNs and temporal data, by RNNs.
+A question that may follow is, "but couldn't RNNs be just as popular as a methodology? Aren't brain signals technically sequential, temporal information which is what RNNs are great at processing?" RNNs take a long time processing longer sequences (e.g. brain signals), and although depending on the situation, RNNs may take up more than 20 times the training time than CNN may. However, RNNs are promising in detecting epileptic seizures due to their excellent temporal dependency searching ability. By definition, spatial data is better analyzed by CNNs and temporal data, by RNNs.
 
 ###### Representative 
 DBNs, particularly DBN-RBMs, are most popular for feature extraction likely because DBNs learn the generative parameters that reveal the relationship between variables in neighboring layers efficiently. DBNs also make the calculation of the latent variables(hidden variables in hidden layers) straightforward. However, most of the work using the DBN-RBM model was done before 2016. At the moment, most studies use CNN and hybrid models for both feature learning and classification. 

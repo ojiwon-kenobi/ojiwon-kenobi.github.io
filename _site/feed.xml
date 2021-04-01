@@ -1,4 +1,143 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://ojiwon-kenobi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ojiwon-kenobi.github.io/" rel="alternate" type="text/html" /><updated>2021-03-21T22:45:20-05:00</updated><id>https://ojiwon-kenobi.github.io/feed.xml</id><title type="html">badabing badaboom</title><subtitle> </subtitle><entry><title type="html">How to make a blog</title><link href="https://ojiwon-kenobi.github.io/2021/02/18/making-this-blog.html" rel="alternate" type="text/html" title="How to make a blog" /><published>2021-02-18T07:01:00-06:00</published><updated>2021-02-18T07:01:00-06:00</updated><id>https://ojiwon-kenobi.github.io/2021/02/18/making-this-blog</id><content type="html" xml:base="https://ojiwon-kenobi.github.io/2021/02/18/making-this-blog.html">&lt;p&gt;Blogs! They’re a great way to showcase thoughts and ideas. I created this blog to create blogposts about my side-projects and hobbies.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://ojiwon-kenobi.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://ojiwon-kenobi.github.io/" rel="alternate" type="text/html" /><updated>2021-03-31T20:39:11-05:00</updated><id>https://ojiwon-kenobi.github.io/feed.xml</id><title type="html">badabing badaboom</title><subtitle> </subtitle><entry><title type="html">Applications of AI in the analysis of brain signals</title><link href="https://ojiwon-kenobi.github.io/2021/02/19/applications-of-ai-in-analysis-of-brain-signals.html" rel="alternate" type="text/html" title="Applications of AI in the analysis of brain signals" /><published>2021-02-19T07:51:00-06:00</published><updated>2021-02-19T07:51:00-06:00</updated><id>https://ojiwon-kenobi.github.io/2021/02/19/applications-of-ai-in-analysis-of-brain-signals</id><content type="html" xml:base="https://ojiwon-kenobi.github.io/2021/02/19/applications-of-ai-in-analysis-of-brain-signals.html">&lt;p&gt;This post is a general summary of &lt;a href=&quot;https://pubmed.ncbi.nlm.nih.gov/33171452/&quot;&gt;A survey on deep learning-based non-invasive brain signals: recent advances and new frontiers &lt;/a&gt;, written in November 2020 by Zhang et al. It’s a 42-page paper with thorough detail and insight about how AI is playing a role in the emerging field of non-invasive brain-signal analysis using deep learning techniques.&lt;/p&gt;
+
+&lt;p&gt;The intended audience for this paper may be researchers with backgrounds in biology and/or neuroscience who want to apply deep learning in their research, and researchers with backgrounds in computer science interested in brain signal research.&lt;/p&gt;
+
+&lt;h3 id=&quot;i-introduction&quot;&gt;I. Introduction&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Invasive signals&lt;/strong&gt; refer to signals collected through electrodes beneath the scalp, and &lt;strong&gt;non-invasive&lt;/strong&gt;, signals collected through electrodes upon the scalp. This paper focuses on non-invasive brain signals.
+Non-invasive signals are comparably low fidelity, the Signal-to-Noise Ratio (SNR) being only approximately 5% of the original brain signals collected. 
+Non-invasive collection methods can be electrical, magnetic, or metabolic, which include Electroencephalogram (EEG), Functional near-infrared spectroscopy (fNIRS), Functional magnetic resonance imaging (fMRI), and Magnetoencephalography (MEG). 
+The traditional workflow has been the following: &lt;img src=&quot;https://i.ibb.co/pygxV87/Screen-Shot-2021-02-20-at-8-01-56-PM.png&quot; alt=&quot;a&quot; /&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Collect brain signals&lt;/li&gt;
+  &lt;li&gt;Preprocess the collection&lt;/li&gt;
+  &lt;li&gt;Extract features&lt;/li&gt;
+  &lt;li&gt;Classify &lt;br /&gt;
+5a. Analyze &lt;br /&gt;
+5b. Send to BCI (such as a prosthesis or a smart device) to control equipment –&amp;gt; step 1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Before deep learning, there were traditional classifiers dependent on domain knowledge. There were three associated difficulties with this approach:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Brain signals are easily corrupted by various biological and environmental factors.&lt;/li&gt;
+  &lt;li&gt;Low SNR is not easily addressed.&lt;/li&gt;
+  &lt;li&gt;Feature extraction depends on domain expertise, meaning researchers needed backgrounds in biology and neuroscience. The amount of domain expertise one had would easily impact research outcomes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Incorporating deep learning into brain signal applications has addressed the difficulties above and offer two more advantages:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Using DL saves time as there is no need for preprocessing and feature extraction (this is all done within deep learning models)&lt;/li&gt;
+  &lt;li&gt;Deep neural networks can capture both representative high-level features and latent dependencies through deep structures.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ii-deep-learning-models&quot;&gt;II. Deep learning models&lt;/h3&gt;
+&lt;p&gt;Supervised learning models take in a labeled dataset to learn and improve accuracy. Unsupervised models try to make sense of datasets on their own by extracting features and patterns. &lt;strong&gt;Discriminative Models&lt;/strong&gt; are supervised learning models. Examples include multi-layer perceptrons(MLP), recurrent neural networks (RNN), and convolutional neural networks (CNN). They take in a dataset to extract features and classify samples. &lt;strong&gt;Representative models&lt;/strong&gt; are unsupervised learning models, which include autoencoders (AE), restricted Boltzmann machine (RBM), and deep belief networks (DBN). They take in a dataset as input and can output a representation after extracting features. &lt;strong&gt;Generative Models&lt;/strong&gt; are slightly different from the past two in that their main job is not to classify, but to generate data as their name implies. Variational Autoencoders (VAE) and generative adversarial networks (GAN) can output new samples and reconstruct missing data. &lt;strong&gt;Hybrid Models&lt;/strong&gt; combine more than two of the aforementioned models, typical combinations being a representation model for feature extraction with a discriminative model for classification.&lt;/p&gt;
+
+&lt;h3 id=&quot;iii-state-of-the-art-dl-techniques-for-brain-signals&quot;&gt;III. State-of-the-art DL techniques for brain signals&lt;/h3&gt;
+&lt;p&gt;Below are publications’ subject brain signals and deep learning models. 
+&lt;img src=&quot;https://i.ibb.co/j5YyrvD/Screen-Shot-2021-02-21-at-4-37-16-PM.png&quot; alt=&quot;img&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;a-eeg&quot;&gt;A) EEG&lt;/h5&gt;
+&lt;h6 id=&quot;spontaneous-eeg-naturally-occurring-signals-as-opposed-to-evoked&quot;&gt;Spontaneous EEG: naturally-occurring signals as opposed to evoked&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;Sleep EEG: signal data can be used to recognize sleep stages (refer to R&amp;amp;K rules or AASM recommendations) and to diagnose sleep disorders
+    &lt;ul&gt;
+      &lt;li&gt;Discriminative: CNN&lt;/li&gt;
+      &lt;li&gt;Representative: DBN-RBM&lt;/li&gt;
+      &lt;li&gt;Hybrid: CNN &amp;amp; MLP, CNN &amp;amp; LSTM&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Motor Imagery EEG: mental imagery of making a movement
+    &lt;ul&gt;
+      &lt;li&gt;Discriminative: CNN, 2-D CNN, LSTM, MLP&lt;/li&gt;
+      &lt;li&gt;Representative: D-AE, DBN-AE, DBN-RBM&lt;/li&gt;
+      &lt;li&gt;Generative: VAE&lt;/li&gt;
+      &lt;li&gt;Hybrid: CNN &amp;amp; LSTM, Repre+ Discri&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Emotional EEG: evaluation of emotions by measuring valence, arousal, and dominance
+    &lt;ul&gt;
+      &lt;li&gt;Discriminative: RNN, CNN, MLP&lt;/li&gt;
+      &lt;li&gt;Representative: DBN-RBM, RBM-AE, DBN-RBM+SVM+HMM, SAAE&lt;/li&gt;
+      &lt;li&gt;Hybrid: RNN&amp;amp;MLP, D-AE&amp;amp;MLP, DBN&amp;amp;RBM&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Mental Disease EEG: diagnosis of mental diseases (epileptic seizures, depression, Alzheimer’s, Parkinson’s)
+    &lt;ul&gt;
+      &lt;li&gt;Discriminative: CNN, RNN&lt;/li&gt;
+      &lt;li&gt;Representative: DBN-RBM, sparse D-AE&lt;/li&gt;
+      &lt;li&gt;Hybrid: CNN &amp;amp; RNN, CNN &amp;amp; LSTM, MLP, C-AE&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Data Augmentation
+    &lt;ul&gt;
+      &lt;li&gt;Generative: GAN can augment data to increase classification accuracy&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h6 id=&quot;evoked-potentials&quot;&gt;Evoked Potentials&lt;/h6&gt;
+&lt;ul&gt;
+  &lt;li&gt;(EP)/(ERP): event-related voltage changes due to outside stimuli in ongoing EEG activity that are time-locked to sensory, motor, and cognitive events
+    &lt;ul&gt;
+      &lt;li&gt;VEP (visual evoked potential)
+        &lt;ul&gt;
+          &lt;li&gt;DBN-RBM, 2D CNN, LSTM, DBN-RBM, SVM classifier, AE model, CNN&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;AEP (auditory evoked potential)
+        &lt;ul&gt;
+          &lt;li&gt;CNN&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;RSVP (rapid serial visual presentation)
+        &lt;ul&gt;
+          &lt;li&gt;CNN, MLP, DBN, DBN-AED-AE&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SSEP:
+    &lt;ul&gt;
+      &lt;li&gt;SSVEP (steady state visual evoked potential): brain oscillation evoked by flickering visual stimuli
+        &lt;ul&gt;
+          &lt;li&gt;CNN, RNN DBN-RBM, DBN-AE, MLP&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;b-fnirs&quot;&gt;B) fNIRS&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;Discriminative: CNN, MLP&lt;/li&gt;
+  &lt;li&gt;Representative: AE, DBN-RBM, DBN-AE&lt;/li&gt;
+  &lt;li&gt;Generative: convolutional GAN, DCGAN, WGAN&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;c-eg&quot;&gt;C) EG&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;1-D CNN, CNN&amp;amp;MLP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;iv-guidelines-on-choosing-appropriate-dl-models&quot;&gt;IV. Guidelines on choosing appropriate DL models&lt;/h3&gt;
+&lt;p&gt;Classification of sleep EEG mainly utilizes discriminative and hybrid models including CNNs and RNNs. MI EEG is most significantly researched using CNN and CNN-based hybrid models. Latent features of MI EEG signals are captured using representative models such as DBN-RBM. Emotional EEG mostly use DBN-RBM for unsupervised feature learning. Mental disease diagnosis is largely a binary classification problem, which makes it easier for models to achieve accuracy greater than 90%. CNN and D-AE are prevalent likely because both deep learning models are well known for their effective classification and dimensionality reduction. In comparison, there are fewer deep learning studies on fNIRS images even though fNIRS also is known for its high portability and low cost.&lt;/p&gt;
+&lt;h6 id=&quot;discriminative&quot;&gt;Discriminative&lt;/h6&gt;
+&lt;p&gt;The reason CNN is so prevalent is likely because of its outstanding performance in feature learning. CNN is powerful enough to extract latent discriminative features and spatial dependencies from EEG signals for classification. It is also an extremely popular model in popular research areas such as computer vision, which studies how computers can gain insight from images or videos. Because some brain signal diagrams (e.g. fMRI) are 2D images anyways, they can be used as input to CNNs without much work. CNNs also have plenty of variations that can be adapted to different scenarios.&lt;/p&gt;
+
+&lt;p&gt;A question that may follow is, “but couldn’t RNNs be just as popular as a methodology? Aren’t brain signals technically sequential, temporal information which is what RNNs are great at processing?” RNNs take a long time processing longer sequences (e.g. brain signals), and although depending on the situation, RNNs may take up more than 20 times the training time than CNN may. However, RNNs are promising in detecting epileptic seizures due to their excellent temporal dependency searching ability. By definition, spatial data is better analyzed by CNNs and temporal data, by RNNs.&lt;/p&gt;
+
+&lt;h6 id=&quot;representative&quot;&gt;Representative&lt;/h6&gt;
+&lt;p&gt;DBNs, particularly DBN-RBMs, are most popular for feature extraction likely because DBNs learn the generative parameters that reveal the relationship between variables in neighboring layers efficiently. DBNs also make the calculation of the latent variables(hidden variables in hidden layers) straightforward. However, most of the work using the DBN-RBM model was done before 2016. At the moment, most studies use CNN and hybrid models for both feature learning and classification.&lt;/p&gt;
+
+&lt;h6 id=&quot;generative&quot;&gt;Generative&lt;/h6&gt;
+&lt;p&gt;These are rare and are prevalent in data augmentation and reconstruction in fMRI and EEG signals.&lt;/p&gt;
+
+&lt;h6 id=&quot;hybrid&quot;&gt;Hybrid&lt;/h6&gt;
+&lt;p&gt;RNN and CNN combos are incredibly popular for their excellent temporal and spatial feature extraction. CNN and MLP combos can also extract spatial features and classify. The generic combo of representative and discriminative models (e.g. CNN+ AE, CNN+ DBN-RBM)is also popular as the former refine features and the latter classifies.&lt;/p&gt;
+
+&lt;h3 id=&quot;v-open-issues&quot;&gt;V. Open Issues&lt;/h3&gt;
+&lt;p&gt;Although deep learning has solved a lot of the performance issues of brain signal systems, there are still challenges including implementing an explainable general framework, subject-independent classification, semi-supervised and unsupervised classification, online implementation, and portability. 
+&lt;strong&gt;General frameworks&lt;/strong&gt; need to be able to handle brain signals regardless of the number of channels used for signal collection, the sample dimensions, and stimulation types. They need two key capabilities: an attention mechanism, which would guarantee that the framework can focus on the most valuable parts of input signals, and the ability to capture latent features.&lt;/p&gt;</content><author><name></name></author><summary type="html">This post is a general summary of A survey on deep learning-based non-invasive brain signals: recent advances and new frontiers , written in November 2020 by Zhang et al. It’s a 42-page paper with thorough detail and insight about how AI is playing a role in the emerging field of non-invasive brain-signal analysis using deep learning techniques.</summary></entry><entry><title type="html">How to make a blog</title><link href="https://ojiwon-kenobi.github.io/2021/02/18/making-this-blog.html" rel="alternate" type="text/html" title="How to make a blog" /><published>2021-02-18T07:01:00-06:00</published><updated>2021-02-18T07:01:00-06:00</updated><id>https://ojiwon-kenobi.github.io/2021/02/18/making-this-blog</id><content type="html" xml:base="https://ojiwon-kenobi.github.io/2021/02/18/making-this-blog.html">&lt;p&gt;Blogs! They’re a great way to showcase thoughts and ideas. I created this blog to create blogposts about my side-projects and hobbies.
 I started by leafing through random github repos of software engineers and UX designers, until I found a theme that I liked. &lt;a href=&quot;https://www.google.com/search?client=firefox-b-1-d&amp;amp;q=StartBootstrap%2Fstartbootstrap-clean-blog-jekyll+&quot;&gt;StartBootstrap/startbootstrap-clean-blog-jekyll&lt;/a&gt; had everything I wanted- minimalist design, a backdrop image, and placement of posts on the front page. 
 And then setup was pretty straightforward.&lt;/p&gt;
 
